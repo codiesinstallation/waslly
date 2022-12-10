@@ -1,3 +1,44 @@
 <?php
-bolt_decrypt( __FILE__ , 'dXVcpy'); return 0;
-##!!!##aGjT0cN+p8rK08vHzL/Sw7qiv9K/wL/Rw7qrx8XQv9LHzczRuqvHxdC/0sfNzJlo09HDfqfKytPLx8y/0sO6or/Sv8C/0cO6scHGw8u/uqDK08PO0MfM0plo09HDfqfKytPLx8y/0sO6sdPOzs3Q0rqkv8G/wsPRurHBxsPLv5loaMHKv9HRfqHQw7/Sw6DQv8zBxsPRsr/AysN+w9bSw8zC0X6rx8XQv9LHzcxo2Wh+fn5+jYiIaH5+fn5+iH6w08x+0sbDfsvHxdC/0sfNzNGMaH5+fn5+iGh+fn5+foh+ntDD0tPQzH7UzcfCaH5+fn5+iI1ofn5+fs7TwMrHwX7E08zB0sfNzH7TzoaHaH5+fn7ZaH5+fn5+fn5+scHGw8u/mJjB0MO/0sOGhcDQv8zBxsPRhYp+xNPMwdLHzcx+hqDK08PO0MfM0n6C0r/AysOHftlofn5+fn5+fn5+fn5+gtK/wMrDi5zHwoaHmWh+fn5+fn5+fn5+fn6C0r/AysOLnMrNzMWyw9bShoXMv8vDvb/QhYeZaH5+fn5+fn5+fn5+foLSv8DKw4ucys3MxbLD1tKGhcy/y8O9w8yFh4uczNPKyr/AysOGh5lofn5+fn5+fn5+fn5+gtK/wMrDi5zKzczFssPW0oaFys3Bv9LHzcy9v9CFh4uczNPKyr/AysOGh5lofn5+fn5+fn5+fn5+gtK/wMrDi5zKzczFssPW0oaFys3Bv9LHzcy9w8yFh4uczNPKyr/AysOGh5lofn5+fn5+fn5+fn5+gtK/wMrDi5zR0tDHzMWGhcvNwMfKw4WHi5zM08rKv8DKw4aHmWh+fn5+fn5+fn5+fn6C0r/AysOLnNHS0MfMxYaFw8u/x8qFh4uczNPKyr/AysOGh5lofn5+fn5+fn5+fn5+gtK/wMrDi5zCw8HHy7/KhoXUv9KFh4ucwsPEv9PK0oaOjI6HmWh+fn5+fn5+fn5+fn6C0r/AysOLnNHS0MfMxYaF1L/SvczTy4WHi5zM08rKv8DKw4aHmWh+fn5+fn5+fn5+fn6C0r/AysOLnMrNzMWyw9bShoXKzcXNhYeLnMzTysq/wMrDhoeZaH5+fn5+fn5+fn5+foLSv8DKw4uc09PHwoaF09PHwoWHi5zTzMfP08OGh5lofn5+fn5+fn5+fn5+gtK/wMrDi5zSx8vDhoXBys3R09DDvcbN09CFh4ucwsPEv9PK0obMzdWGh4eZaH5+fn5+fn5+fn5+foLSv8DKw4uc0dLQx8zFhoXCw8S/08rSvcq/zMWFh4ucwsPEv9PK0oaFv9CFh5loaH5+fn5+fn5+fn5+foLSv8DKw4uc0c3E0qLDysPSw9GGh5lofn5+fn5+fn7bh5lofn5+fttoaH5+fn6NiIhofn5+fn6IfrDD1MPQ0cN+0sbDfsvHxdC/0sfNzNGMaH5+fn5+iGh+fn5+foh+ntDD0tPQzH7UzcfCaH5+fn5+iI1ofn5+fs7TwMrHwX7E08zB0sfNzH7CzdXMhodofn5+ftlofn5+fn5+fn6xwcbDy7+YmMLQzc6nxKPWx9HS0YaFwNC/zMHGw9GFh5lofn5+ftto22g=
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateBranchesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('branches', function (Blueprint $table) {
+            $table->id();
+            $table->longText('name_ar');
+            $table->longText('name_en')->nullable();
+            $table->longText('location_ar')->nullable();
+            $table->longText('location_en')->nullable();
+            $table->string('mobile')->nullable();
+            $table->string('email')->nullable();
+            $table->decimal('vat')->default(0.0);
+            $table->string('vat_num')->nullable();
+            $table->longText('logo')->nullable();
+            $table->uuid('uuid')->unique();
+            $table->time('closure_hour')->default(now());
+            $table->string('default_lang')->default('ar');
+
+            $table->softDeletes();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('branches');
+    }
+}

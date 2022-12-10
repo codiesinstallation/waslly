@@ -1,3 +1,33 @@
 <?php
-bolt_decrypt( __FILE__ , 'BA0fFx'); return 0;
-##!!!##5OHk4UxKPPcgQ0NMREBFOEs8Mxs4Szg5OEo8MyRAPkk4S0BGRUozJEA+SThLQEZFEuThTEo89yBDQ0xEQEU4SzwzGzhLODk4SjwzKjo/PEQ4MxlDTDxHSUBFSxLk4UxKPPcgQ0NMREBFOEs8MypMR0dGSUszHTg6ODs8SjMqOj88RDgS5OHk4TpDOEpK9xpJPDhLPB5GTTxJRUZJOEs8Sis4OUM89zxPSzxFO0r3JEA+SThLQEZF5OFS5OH39/f3BgEB5OH39/f39wH3KUxF90s/PPdEQD5JOEtARkVKBeTh9/f39/cB5OH39/f39wH3F0k8S0xJRfdNRkA75OH39/f39wEG5OH39/f3R0w5Q0A69z1MRTpLQEZF90xH/wDk4ff39/dS5OH39/f39/f39yo6PzxEOBEROkk8OEs8//4+Rk08SUVGSThLPEr+A/c9TEU6S0BGRff/GUNMPEdJQEVL9/tLODlDPAD3UuTh9/f39/f39/f39/f3+0s4OUM8BBVAO/8AEuTh9/f39/f39/f39/f3+0s4OUM8BBU9Rkk8QD5FIDv/+TpGTEVLSVA2QDv5AAQVOkZFSktJOEBFPDv/+TpGTEVLSUA8SvkABBVFTENDODlDPP8AEuTh9/f39/f39/f39/f3+0s4OUM8BBVKS0lART7//kU4RDw2OEn+ABLk4ff39/f39/f39/f39/tLODlDPAQVSktJQEU+//5FOEQ8NjxF/gAS5OH39/f39/f391QAEuTh9/f391Tk4eTh9/f39wYBAeTh9/f39/cB9yk8TTxJSjz3Sz8890RAPkk4S0BGRUoF5OH39/f39wHk4ff39/f3AfcXSTxLTElF901GQDvk4ff39/f3AQbk4ff39/dHTDlDQDr3PUxFOktARkX3O0ZORf8A5OH39/f3UuTh9/f39/f39/cqOj88RDgRETtJRkcgPRxPQEpLSv/+PkZNPElFRkk4SzxK/gAS5OH39/f3VOThVOTh
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateGovernoratesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('governorates', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId("country_id")->constrained("countries")->nullable();
+            $table->string('name_ar');
+            $table->string('name_en');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('governorates');
+    }
+}

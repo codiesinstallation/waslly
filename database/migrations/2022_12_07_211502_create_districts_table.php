@@ -1,3 +1,34 @@
 <?php
-bolt_decrypt( __FILE__ , 'jHhgS7'); return 0;
-##!!!##FRWAfnArVHd3gHh0eWx/cGdPbH9sbWx+cGdYdHJ9bH90enl+Z1h0cn1sf3R6eUYVgH5wK1R3d4B4dHlsf3BnT2x/bG1sfnBnXm5zcHhsZ013gHB7fXR5f0YVgH5wK1R3d4B4dHlsf3BnXoB7e3p9f2dRbG5sb3B+Z15uc3B4bEYVFW53bH5+K059cGx/cE90fn99dG5/fl9sbXdwK3CDf3B5b34rWHRyfWx/dHp5FYYVKysrKzo1NRUrKysrKzUrXYB5K39zcCt4dHJ9bH90enl+ORUrKysrKzUVKysrKys1K0t9cH+AfXkrgXp0bxUrKysrKzU6FSsrKyt7gG13dG4rcYB5bn90enkrgHszNBUrKysrhhUrKysrKysrK15uc3B4bEVFbn1wbH9wMzJvdH5/fXRuf34yNytxgHluf3R6eSszTXeAcHt9dHl/Ky9/bG13cDQrhhUrKysrKysrKysrKysvf2xtd3A4SXRvMzRGFSsrKysrKysrKysrKy9/bG13cDhJdHl/cHJwfTMyfXBydHp5anRvMjRGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJ5bHhwamx9MjRGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJ5bHhwanB5MjRGFSsrKysrKysrKysrKy9/bG13cDhJdHl/cHJwfTMybnR/hGp0bzI0RhUrKysrKysrK4g0RhUrKysriBUVKysrKzo1NRUrKysrKzUrXXCBcH1+cCt/c3AreHRyfWx/dHp5fjkVKysrKys1FSsrKysrNStLfXB/gH15K4F6dG8VKysrKys1OhUrKysre4Btd3RuK3GAeW5/dHp5K296gnkzNBUrKysrhhUrKysrKysrK15uc3B4bEVFb316e1RxUIN0fn9+MzJvdH5/fXRuf34yNEYVKysrK4gViBU=
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateDistrictsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('districts', function (Blueprint $table) {
+            $table->id();
+            $table->integer('region_id');
+            $table->string('name_ar');
+            $table->string('name_en');
+            $table->integer('city_id');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('districts');
+    }
+}

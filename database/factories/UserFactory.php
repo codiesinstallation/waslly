@@ -1,3 +1,33 @@
 <?php
-bolt_decrypt( __FILE__ , 'DajWIM'); return 0;
-##!!!##BgZqXWlhb2xdX2EcQF1wXV5db2FYQl1fcGtuZWFvNwYGcW9hHD1sbFhJa2BhaG9YUW9hbjcGcW9hHEVoaHFpZWpdcGFYQF1wXV5db2FYQWhrbXFhanBYQl1fcGtuZWFvWEJdX3BrbnU3BnFvYRxFaGhxaWVqXXBhWE9xbGxrbnBYT3BuNwYGX2hdb28cUW9hbkJdX3BrbnUcYXRwYWpgbxxCXV9wa251BncGHBwcHCsmJgYcHBwcHCYcUGRhHGpdaWEca2IccGRhHGJdX3BrbnUjbxxfa25uYW9sa2pgZWpjHGlrYGFoKgYcHBwcHCYGHBwcHBwmHDxyXW4cb3BuZWpjBhwcHBwcJisGHBwcHGxua3BhX3BhYBwgaWtgYWgcORxRb2FuNjZfaF1vbzcGBhwcHBwrJiYGHBwcHBwmHEBhYmVqYRxwZGEcaWtgYWgjbxxgYWJdcWhwHG9wXXBhKgYcHBwcHCYGHBwcHBwmHDxuYXBxbmocXW5uXXUGHBwcHBwmKwYcHBwcbHFeaGVfHGJxal9wZWtqHGBhYmVqZXBla2okJQYcHBwcdwYcHBwcHBwcHG5hcHFuahxXBhwcHBwcHBwcHBwcHCNqXWlhIxw5OhwgcGRlbyk6Yl1nYW4pOmpdaWEoBhwcHBwcHBwcHBwcHCNhaV1laCMcOTocIHBkZW8pOmJdZ2FuKTpxamVtcWEkJSk6b11iYUFpXWVoKAYcHBwcHBwcHBwcHBwjYWldZWhbcmFuZWJlYWBbXXAjHDk6HGprcyQlKAYcHBwcHBwcHBwcHBwjbF1vb3NrbmAjHDk6HCMgLnUgLSwgNS5FVFFKbGdmSyxuS00xXnVJZSpVYTBrR2tBXS9OazVoaD8rKmtjK11wLipxZGFTQytlY2UjKBwrKxxsXW9vc2tuYAYcHBwcHBwcHBwcHBwjbmFpYWleYW5bcGtnYWojHDk6HE9wbjY2bl1qYGtpJC0sJSgGHBwcHBwcHBxZNwYcHBwceQZ5Bg==
+
+namespace Database\Factories;
+
+use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
+class UserFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = User::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'name' => $this->faker->name,
+            'email' => $this->faker->unique()->safeEmail,
+            'email_verified_at' => now(),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'remember_token' => Str::random(10),
+        ];
+    }
+}

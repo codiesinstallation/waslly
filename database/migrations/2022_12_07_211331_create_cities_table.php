@@ -1,3 +1,34 @@
 <?php
-bolt_decrypt( __FILE__ , '9ix0hl'); return 0;
-##!!!##KCiTkYM+Z4qKk4uHjH+Sg3pif5J/gH+Rg3prh4WQf5KHjYyRemuHhZB/koeNjFkok5GDPmeKipOLh4x/koN6Yn+Sf4B/kYN6cYGGg4t/emCKk4OOkIeMklkok5GDPmeKipOLh4x/koN6cZOOjo2Qknpkf4F/goORenGBhoOLf1koKIGKf5GRPmGQg3+Sg2GHkoeDkXJ/gIqDPoOWkoOMgpE+a4eFkH+Sh42MKJkoPj4+Pk1ISCg+Pj4+Pkg+cJOMPpKGgz6Lh4WQf5KHjYyRTCg+Pj4+PkgoPj4+Pj5IPl6Qg5KTkIw+lI2Hgig+Pj4+PkhNKD4+Pj6Ok4CKh4E+hJOMgZKHjYw+k45GRyg+Pj4+mSg+Pj4+Pj4+PnGBhoOLf1hYgZCDf5KDRkWBh5KHg5FFSj6Ek4yBkoeNjD5GYIqTg46Qh4ySPkKSf4CKg0c+mSg+Pj4+Pj4+Pj4+Pj5Ckn+AioNLXIeCRkdZKD4+Pj4+Pj4+Pj4+PkKSf4CKg0tch4ySg4WDkEZFkIOFh42MfYeCRUdZKD4+Pj4+Pj4+Pj4+PkKSf4CKg0tckZKQh4yFRkWMf4uDfX+QRUdZKD4+Pj4+Pj4+Pj4+PkKSf4CKg0tckZKQh4yFRkWMf4uDfYOMRUdZKCg+Pj4+Pj4+PptHWSg+Pj4+mygoPj4+Pk1ISCg+Pj4+Pkg+cIOUg5CRgz6ShoM+i4eFkH+Sh42MkUwoPj4+Pj5IKD4+Pj4+SD5ekIOSk5CMPpSNh4IoPj4+Pj5ITSg+Pj4+jpOAioeBPoSTjIGSh42MPoKNlYxGRyg+Pj4+mSg+Pj4+Pj4+PnGBhoOLf1hYgpCNjmeEY5aHkZKRRkWBh5KHg5FFR1koPj4+Ppsomyg=
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCitiesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('cities', function (Blueprint $table) {
+            $table->id();
+            $table->integer('region_id');
+            $table->string('name_ar');
+            $table->string('name_en');
+
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('cities');
+    }
+}

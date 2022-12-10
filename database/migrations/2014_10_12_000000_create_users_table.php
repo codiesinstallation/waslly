@@ -1,3 +1,40 @@
 <?php
-bolt_decrypt( __FILE__ , '4yws5M'); return 0;
-##!!!##IyOOjH45YoWFjoaCh3qNfnVdeo16e3qMfnVmgoCLeo2CiIeMdWaCgIt6jYKIh1Qjjox+OWKFhY6Ggod6jX51XXqNent6jH51bHyBfoZ6dVuFjn6Ji4KHjVQjjox+OWKFhY6Ggod6jX51bI6JiYiLjXVfenx6fX6MdWx8gX6GelQjI3yFeoyMOVyLfnqNfm6MfouMbXp7hX45fpGNfod9jDlmgoCLeo2CiIcjlCM5OTk5SENDIzk5OTk5Qzlrjoc5jYF+OYaCgIt6jYKIh4xHIzk5OTk5QyM5OTk5OUM5WYt+jY6LhzmPiIJ9Izk5OTk5Q0gjOTk5OYmOe4WCfDl/jod8jYKIhzmOiUFCIzk5OTmUIzk5OTk5OTk5bHyBfoZ6U1N8i356jX5BQI6MfouMQEU5f46HfI2CiIc5QVuFjn6Ji4KHjTk9jXp7hX5COZQjOTk5OTk5OTk5OTk5PY16e4V+RleCfUFCVCM5OTk5OTk5OTk5OTk9jXp7hX5GV4yNi4KHgEFAh3qGfkBCVCM5OTk5OTk5OTk5OTk9jXp7hX5GV4yNi4KHgEFAfoZ6goVAQkZXjoeCio5+QUJUIzk5OTk5OTk5OTk5OT2NenuFfkZXjYKGfoyNeoaJQUB+hnqChXiPfouCf4J+fXh6jUBCRleHjoWFenuFfkFCVCM5OTk5OTk5OTk5OTk9jXp7hX5GV4yNi4KHgEFAiXqMjJCIi31AQlQjOTk5OTk5OTk5OTk5PY16e4V+Rld7iIiFfnqHQUB6fYaCh0BCRld9fn96joWNQX96hYx+QlQjOTk5OTk5OTk5OTk5PY16e4V+RleLfoZ+hnt+i22IhH6HQUJUIzk5OTk5OTk5OTk5OT2NenuFfkZXjI2LgoeAQUB7i3qHfIF4gn1AQlQjOTk5OTk5OTk5OTk5PY16e4V+RleNgoeSYoeNfoB+i0FAjI16jY6MQEJGV31+f3qOhY1Bf3qFjH5CVCMjOTk5OTk5OTk5OTk5PY16e4V+RleNgoZ+jI16homMQUJUIzk5OTk5OTk5lkJUIzk5OTmWIyM5OTk5SENDIzk5OTk5Qzlrfo9+i4x+OY2BfjmGgoCLeo2CiIeMRyM5OTk5OUMjOTk5OTlDOVmLfo2Oi4c5j4iCfSM5OTk5OUNIIzk5OTmJjnuFgnw5f46HfI2CiIc5fYiQh0FCIzk5OTmUIzk5OTk5OTk5bHyBfoZ6U1N9i4iJYn9ekYKMjYxBQI6MfouMQEJUIzk5OTmWI5Yj
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateUsersTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->boolean('admin')->default(false);
+            $table->rememberToken();
+            $table->string('branch_id');
+            $table->tinyInteger('status')->default(false);
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('users');
+    }
+}

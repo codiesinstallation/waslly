@@ -1,3 +1,30 @@
 <?php
-bolt_decrypt( __FILE__ , '9Od0Px'); return 0;
-##!!!##7u5SRVFJV1RFR0kEKEVYRUZFV0lAN0lJSElWVx/u7llXSQQlVFRAMVNISVBXQDlXSVYf7llXSQQtUFBZUU1SRVhJQChFWEVGRVdJQDdJSUhJVh/uWVdJBC1QUFlRTVJFWElAN1lUVFNWWEAqRUdFSElXQCxFV0wf7u5HUEVXVwQ5V0lWN0lJSElWBElcWElSSFcEN0lJSElW7l/uBAQEBBMODu4EBAQEBA4ENllSBFhMSQRIRVhFRkVXSQRXSUlIVxLuBAQEBAQO7gQEBAQEDgQkVklYWVZSBFpTTUjuBAQEBAQOE+4EBAQEVFlGUE1HBEpZUkdYTVNSBFZZUgwN7gQEBARf7gQEBAQEBAQEOVdJVh4eWFZZUkdFWEkMDR/u7gQEBAQEBAQECDlXSVZJVwQhBD/uBAQEBAQEBAQEBAQEPwtSRVFJCwQhIgQLvWm8mbybvWW9bQsQBAtJUUVNUAsEISIEC0VIUU1SJEVIUU1SEkdTUQsQ7gQEBAQEBAQEBAQEBAQEBAQLVEVXV1tTVkgLBCEiBCxFV0weHlFFT0kMCxUWFxgZGhscCw0QBAtGVkVSR0xDTUgLISIVEAtXWEVYWVcLISIUQRDu7gQEBAQEBAQEQR/u7gQEBAQEBAQESlNWSUVHTAQMCDlXSVZJVwRFVwQIT0ldBCEiBAhaRVBZSQ0EX+4EBAQEBAQEBAQEBAQ5V0lWHh5HVklFWEkMCFpFUFlJDR/uBAQEBAQEBARh7gQEBARh7mHu
+
+namespace Database\Seeders;
+
+use App\Models\User;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+
+class UserSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        User::truncate();
+
+        $Useres = [
+            ['name' => 'مصطفى', 'email' => 'admin@admin.com',
+                'password' => Hash::make('12345678'), 'branch_id'=>1,'status'=>0],
+
+        ];
+
+        foreach ($Useres as $key => $value) {
+            User::create($value);
+        }
+    }
+}

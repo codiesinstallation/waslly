@@ -1,3 +1,72 @@
 <?php
-bolt_decrypt( __FILE__ , 'UVG4wn'); return 0;
-##!!!##FRWAfnArVHd3gHh0eWx/cGdPbH9sbWx+cGdYdHJ9bH90enl+Z1h0cn1sf3R6eUYVgH5wK1R3d4B4dHlsf3BnT2x/bG1sfnBnXm5zcHhsZ013gHB7fXR5f0YVgH5wK1R3d4B4dHlsf3BnXoB7e3p9f2dRbG5sb3B+Z09NRhWAfnArVHd3gHh0eWx/cGdegHt7en1/Z1FsbmxvcH5nXm5zcHhsRhWAfnArVHd3gHh0eWx/cGdegHt7en1/Z15/fUYVFW53bH5+K059cGx/cFp9b3B9fl9sbXdwK3CDf3B5b34rWHRyfWx/dHp5FYYVKysrKzo1NRUrKysrKzUrXYB5K39zcCt4dHJ9bH90enl+ORUrKysrKzUVKysrKys1K0t9cH+AfXkrgXp0bxUrKysrKzU6FSsrKyt7gG13dG4rcYB5bn90enkrgHszNBUrKysrhhUrKysrKysrK15uc3B4bEVFbn1wbH9wMzJ6fW9wfX4yNytxgHluf3R6eSszTXeAcHt9dHl/Ky9/bG13cDQrhhUrKysrKysrKysrKysvf2xtd3A4SW10clR5f3BycH0zMnRvMjRGFSsrKysrKysrKysrKy9/bG13cDhJgIB0bzMygIB0bzI0OEl7fXR4bH2EMzQ4SYB5dHyAcDM0RhUrKysrKysrKysrKysvf2xtd3A4SXd6eXJfcIN/MzJ+cHlvcH0yNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl3enlyX3CDfzMybnp5fnRyeXBwMjQ4SXmAd3dsbXdwMzRGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJ+cHlvcH1qcHhsdHcyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl+f310eXIzMn5weW9wfWp4em10d3AyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl+f310eXIzMm56eX50cnlwcGp4em10d3AyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl+f310eXIzMm56eX50cnlwcGpweGx0dzI0OEl5gHd3bG13cDM0RhUrKysrKysrKysrKysvf2xtd3A4SX5/fXR5cjMyfnB5b3B9anRvcHl/dHGEMjQ4SXmAd3dsbXdwMzRGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJuenl+dHJ5cHBqdG9weX90cYQyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl3enlyX3CDfzMyfnB5b3B9anl6f3AyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl3enlyX3CDfzMybnp5fnRyeXBwanl6f3AyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl/dHhwfn9seHszMnCDe3CDf3Bvam9sf3BqcX16eDI0OEl5gHd3bG13cDM0RhUrKysrKysrKysrKysvf2xtd3A4SX90eHB+f2x4ezMycIN7cIN/cG9qb2x/cGp/ejI0OEl5gHd3bG13cDM0RhUrKysrKysrKysrKysvf2xtd3A4SW16endwbHkzMm5seW5wd28yNDhJb3BxbIB3fzNxbHd+cDRGFSsrKysrKysrKysrKy9/bG13cDhJbXRyVHl/cHJwfTMyfXBydHp5anRvMjQ4SXmAd3dsbXdwMzRGRhUrKysrKysrKysrKysvf2xtd3A4SX5/fXR5cjMyfn99cHB/anlseHAyNDhJeYB3d2xtd3AzNEZGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJvdH5/fXRufzI0OEl5gHd3bG13cDM0RkYVKysrKysrKysrKysrL39sbXdwOEltdHJUeX9wcnB9MzJudH+EanRvMjQ4SXmAd3dsbXdwMzRGRhUrKysrKysrKysrKysvf2xtd3A4SX5/fXR5cjMybYB0d290eXIyNDhJeYB3d2xtd3AzNEZGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJtgHR3b3R5cmp5ejI0OEl5gHd3bG13cDM0RkYVKysrKysrKysrKysrL39sbXdwOEl/dHmEVHl/cHJwfTMyfn9sf4B+MjQ4SW9wcWyAd38zOzRGFSsrKysrKysrKysrKy9/bG13cDhJd3p5cl9wg38zMm9wfm59dHt/dHp5MjQ4SXmAd3dsbXdwMzRGFSsrKysrKysrKysrKy9/bG13cDhJd3p5cl9wg38zMnl6f3B+MjQ4SXmAd3dsbXdwMzRGFSsrKysrKysrKysrKy9/bG13cDhJb3qAbXdwMzJ+gG1qf3p/bHcyNDhJb3BxbIB3fzM7OTs0RhUrKysrKysrKysrKysvf2xtd3A4SW96gG13cDMyb3R+bnqAeX8yNDhJb3BxbIB3fzM7OTs0RhUrKysrKysrKysrKysvf2xtd3A4SW96gG13cDMycIN/fWwyNDhJb3BxbIB3fzM7OTs0RhUrKysrKysrKysrKysvf2xtd3A4SW96gG13cDMyfoB4MjQ4SW9wcWyAd38zOzk7NEYVKysrKysrKysrKysrL39sbXdwOElveoBtd3AzMoFsfzI0OElvcHFsgHd/Mzs5OzRGFSsrKysrKysrKysrKy9/bG13cDhJb3qAbXdwMzJ/en9sdzI0OElvcHFsgHd/Mzs5OzRGFSsrKysrKysrKysrKy9/bG13cDhJfn99dHlyMzJtfWx5bnNqdG8yNDhJb3BxbIB3fzM8NEYVKysrKysrKysrKysrL39sbXdwOEl+f310eXIzMoB+cH1qdG8yNDhJb3BxbIB3fzM8NEYVKysrKysrKysrKysrL39sbXdwOEl+f310eXIzMoF0d3dscnAyNDhJeYB3d2xtd3AzNEYVKysrKysrKysrKysrL39sbXdwOEl+f310eXIzMntshDI0OEl5gHd3bG13cDM0RhUrKysrKysrKysrKysvf2xtd3A4SX90eHB+f2x4ezMyfXBucHSBcGpvbH9wMjQ4SXmAd3dsbXdwMzRGFSsrKysrKysrKysrKy9/bG13cDhJf3R4cH5/bHh7MzJ+c3R7e3R5cmpvbH9wMjQ4SXmAd3dsbXdwMzRGFSsrKysrKysrKysrKy9/bG13cDhJf3R4cH5/bHh7MzJ6eWqCbIRqb2x/cDI0OEl5gHd3bG13cDM0RhUVKysrKysrKysrKysrL39sbXdwOEl/dHhwfn9seHszMnp9b3B9am9sf3AyNDhJeYB3d2xtd3AzNEYVFRUrKysrKysrK4g0RhUrKysriBUVKysrKzo1NRUrKysrKzUrXXCBcH1+cCt/c3AreHRyfWx/dHp5fjkVKysrKys1FSsrKysrNStLfXB/gH15K4F6dG8VKysrKys1OhUrKysre4Btd3RuK3GAeW5/dHp5K296gnkzNBUrKysrhhUrKysrKysrK15uc3B4bEVFb316e1RxUIN0fn9+MzJ6fW9wfX4yNEYVKysrK4gViBU=
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
+
+class CreateOrdersTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('orders', function (Blueprint $table) {
+            $table->bigInteger('id');
+            $table->uuid('uuid')->primary()->unique();
+            $table->longText('sender')->nullable();
+            $table->longText('consignee')->nullable();
+            $table->string('sender_email')->nullable();
+            $table->string('sender_mobile')->nullable();
+            $table->string('consignee_mobile')->nullable();
+            $table->string('consignee_email')->nullable();
+            $table->string('sender_identify')->nullable();
+            $table->string('consignee_identify')->nullable();
+            $table->longText('sender_note')->nullable();
+            $table->longText('consignee_note')->nullable();
+            $table->timestamp('expexted_date_from')->nullable();
+            $table->timestamp('expexted_date_to')->nullable();
+            $table->boolean('canceld')->default(false);
+            $table->bigInteger('region_id')->nullable();;
+            $table->string('street_name')->nullable();;
+            $table->string('district')->nullable();;
+            $table->bigInteger('city_id')->nullable();;
+            $table->string('building')->nullable();;
+            $table->string('building_no')->nullable();;
+            $table->tinyInteger('status')->default(0);
+            $table->longText('description')->nullable();
+            $table->longText('notes')->nullable();
+            $table->double('sub_total')->default(0.0);
+            $table->double('discount')->default(0.0);
+            $table->double('extra')->default(0.0);
+            $table->double('sum')->default(0.0);
+            $table->double('vat')->default(0.0);
+            $table->double('total')->default(0.0);
+            $table->string('branch_id')->default(1);
+            $table->string('user_id')->default(1);
+            $table->string('village')->nullable();
+            $table->string('pay')->nullable();
+            $table->timestamp('receive_date')->nullable();
+            $table->timestamp('shipping_date')->nullable();
+            $table->timestamp('on_way_date')->nullable();
+
+            $table->timestamp('order_date')->nullable();
+
+
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('orders');
+    }
+}

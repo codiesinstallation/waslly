@@ -1,3 +1,33 @@
 <?php
-bolt_decrypt( __FILE__ , '0dyjAE'); return 0;
-##!!!##BwdycGIdRmlpcmpma15xYllBXnFeX15wYllKZmRvXnFmbGtwWUpmZG9ecWZsazgHcnBiHUZpaXJqZmtecWJZQV5xXl9ecGJZUGBlYmpeWT9pcmJtb2ZrcTgHcnBiHUZpaXJqZmtecWJZUHJtbWxvcVlDXmBeYWJwWVBgZWJqXjgHB2BpXnBwHUBvYl5xYkBscmtxb2ZicFFeX2liHWJ1cWJrYXAdSmZkb15xZmxrB3gHHR0dHSwnJwcdHR0dHScdT3JrHXFlYh1qZmRvXnFmbGtwKwcdHR0dHScHHR0dHR0nHT1vYnFyb2sdc2xmYQcdHR0dHScsBx0dHR1tcl9pZmAdY3JrYHFmbGsdcm0lJgcdHR0deAcdHR0dHR0dHVBgZWJqXjc3YG9iXnFiJSRgbHJrcW9mYnAkKR1jcmtgcWZsax0lP2lyYm1vZmtxHSFxXl9pYiYdeAcdHR0dHR0dHR0dHR0hcV5faWIqO2ZhJSY4Bx0dHR0dHR0dHR0dHSFxXl9pYio7cHFvZmtkJSRrXmpiXF5vJCY4Bx0dHR0dHR0dHR0dHSFxXl9pYio7cHFvZmtkJSRrXmpiXGJrJCY4Bx0dHR0dHR0dHR0dHSFxXl9pYio7cHFvZmtkJSRgbGFiJCY4Bx0dHR0dHR0deiY4Bx0dHR16BwcdHR0dLCcnBx0dHR0dJx1PYnNib3BiHXFlYh1qZmRvXnFmbGtwKwcdHR0dHScHHR0dHR0nHT1vYnFyb2sdc2xmYQcdHR0dHScsBx0dHR1tcl9pZmAdY3JrYHFmbGsdYWx0ayUmBx0dHR14Bx0dHR0dHR0dUGBlYmpeNzdhb2xtRmNCdWZwcXAlJGBscmtxb2ZicCQmOAcdHR0degd6Bw==
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCountriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('countries', function (Blueprint $table) {
+            $table->id();
+            $table->string('name_ar');
+            $table->string('name_en');
+            $table->string('code');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('countries');
+    }
+}

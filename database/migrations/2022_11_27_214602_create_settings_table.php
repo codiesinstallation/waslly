@@ -1,3 +1,33 @@
 <?php
-bolt_decrypt( __FILE__ , 'yKDMKc'); return 0;
-##!!!##DQ14dmgjTG9veHBscWR3aF9HZHdkZWR2aF9QbGp1ZHdscnF2X1BsanVkd2xycT4NeHZoI0xvb3hwbHFkd2hfR2R3ZGVkdmhfVmZraHBkX0VveGhzdWxxdz4NeHZoI0xvb3hwbHFkd2hfVnhzc3J1d19JZGZkZ2h2X1Zma2hwZD4NDWZvZHZ2I0Z1aGR3aFZod3dscWp2V2Rlb2gjaHt3aHFndiNQbGp1ZHdscnENfg0jIyMjMi0tDSMjIyMjLSNVeHEjd2toI3BsanVkd2xycXYxDSMjIyMjLQ0jIyMjIy0jQ3Vod3h1cSN5cmxnDSMjIyMjLTINIyMjI3N4ZW9sZiNpeHFmd2xycSN4cyssDSMjIyN+DSMjIyMjIyMjVmZraHBkPT1mdWhkd2grKnZod3dscWp2Ki8jaXhxZndscnEjK0VveGhzdWxxdyMnd2Rlb2gsI34NIyMjIyMjIyMjIyMjJ3dkZW9oMEFsZyssPg0jIyMjIyMjIyMjIyMnd2Rlb2gwQXZ3dWxxaisqb2RxaiosPg0jIyMjIyMjIyMjIyMnd2Rlb2gwQXZyaXdHaG9od2h2Kyw+DQ0jIyMjIyMjI4AsPg0jIyMjgA0NIyMjIzItLQ0jIyMjIy0jVWh5aHV2aCN3a2gjcGxqdWR3bHJxdjENIyMjIyMtDSMjIyMjLSNDdWh3eHVxI3lybGcNIyMjIyMtMg0jIyMjc3hlb2xmI2l4cWZ3bHJxI2dyenErLA0jIyMjfg0jIyMjIyMjI1Zma2hwZD09Z3Vyc0xpSHtsdnd2Kyp2aHd3bHFqdiosPg0jIyMjgA2ADQ==
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateSettingsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('settings', function (Blueprint $table) {
+            $table->id();
+            $table->string('lang');
+            $table->softDeletes();
+
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('settings');
+    }
+}

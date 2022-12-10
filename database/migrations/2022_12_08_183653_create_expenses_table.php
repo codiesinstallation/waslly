@@ -1,3 +1,39 @@
 <?php
-bolt_decrypt( __FILE__ , 'APmoCF'); return 0;
-##!!!##AABraVsWP2Jia2NfZFdqW1I6V2pXWFdpW1JDX11oV2pfZWRpUkNfXWhXal9lZDEAa2lbFj9iYmtjX2RXaltSOldqV1hXaVtSSVleW2NXUjhia1tmaF9kajEAa2lbFj9iYmtjX2RXaltSSWtmZmVoalI8V1lXWltpUklZXltjVzEAAFliV2lpFjloW1dqWztuZltkaVtpSldYYlsWW25qW2RaaRZDX11oV2pfZWQAcQAWFhYWJSAgABYWFhYWIBZIa2QWal5bFmNfXWhXal9lZGkkABYWFhYWIAAWFhYWFiAWNmhbamtoZBZsZV9aABYWFhYWICUAFhYWFmZrWGJfWRZca2RZal9lZBZrZh4fABYWFhZxABYWFhYWFhYWSVleW2NXMDBZaFtXalseHVtuZltkaVtpHSIWXGtkWWpfZWQWHjhia1tmaF9kahYaaldYYlsfFnEAFhYWFhYWFhYWFhYWGmpXWGJbIzRfWh4fMQAWFhYWFhYWFhYWFhYaaldYYlsjNGlqaF9kXR4dW25mW2RpW1VqX2piWx0fMQAWFhYWFhYWFhYWFhYaaldYYlsjNFpbWV9jV2IeHVtuZltkaVtVWWVpah0fIzRaW1xXa2JqHiYfMQAWFhYWFhYWFhYWFhYaaldYYlsjNFpbWV9jV2IeHVtuZltkaVtVbFdqHR8jNFpbXFdrYmoeJh8xABYWFhYWFhYWFhYWFhpqV1hiWyM0aWpoX2RdHh1mV28dHyM0ZGtiYldYYlseHzEAFhYWFhYWFhYWFhYWGmpXWGJbIzRpamhfZF0eHVtuZltkaVtVX1llZB0fIzRka2JiV1hiWx4fMQAWFhYWFhYWFhYWFhYaaldYYlsjNGpfY1tpaldjZh4dW25mW2RpW1VaV2pbHR8jNGRrYmJXWGJbHh8xABYWFhYWFhYWFhYWFhpqV1hiWyM0WF9dP2RqW11baB4da2lbaFVfWh0fMQAWFhYWFhYWFhYWFhYaaldYYlsjNFhfXT9kaltdW2geHVhoV2RZXlVfWh0fMQAWFhYWFhYWFhYWFhYaaldYYlsjNGpfY1tpaldjZmkeHzEAFhYWFhYWFhZzHzEAFhYWFnMAABYWFhYlICAAFhYWFhYgFkhbbFtoaVsWal5bFmNfXWhXal9lZGkkABYWFhYWIAAWFhYWFiAWNmhbamtoZBZsZV9aABYWFhYWICUAFhYWFmZrWGJfWRZca2RZal9lZBZaZW1kHh8AFhYWFnEAFhYWFhYWFhZJWV5bY1cwMFpoZWY/XDtuX2lqaR4dW25mW2RpW2kdHzEAFhYWFnMAcwA=
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateExpensesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('expenses', function (Blueprint $table) {
+            $table->id();
+            $table->string('expense_title');
+            $table->decimal('expense_cost')->default(0);
+            $table->decimal('expense_vat')->default(0);
+            $table->string('pay')->nullable();
+            $table->string('expense_icon')->nullable();
+            $table->timestamp('expense_date')->nullable();
+            $table->bigInteger('user_id');
+            $table->bigInteger('branch_id');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('expenses');
+    }
+}

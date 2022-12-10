@@ -1,3 +1,35 @@
 <?php
-bolt_decrypt( __FILE__ , 'Y2e8fr'); return 0;
-##!!!##Cgp1c2UgSWxsdW1pbmF0ZVxEYXRhYmFzZVxNaWdyYXRpb25zXE1pZ3JhdGlvbjsKdXNlIElsbHVtaW5hdGVcRGF0YWJhc2VcU2NoZW1hXEJsdWVwcmludDsKdXNlIElsbHVtaW5hdGVcU3VwcG9ydFxGYWNhZGVzXFNjaGVtYTsKCmNsYXNzIENyZWF0ZVJlZ2lvbnNUYWJsZSBleHRlbmRzIE1pZ3JhdGlvbgp7CiAgICAvKioKICAgICAqIFJ1biB0aGUgbWlncmF0aW9ucy4KICAgICAqCiAgICAgKiBAcmV0dXJuIHZvaWQKICAgICAqLwogICAgcHVibGljIGZ1bmN0aW9uIHVwKCkKICAgIHsKICAgICAgICBTY2hlbWE6OmNyZWF0ZSgncmVnaW9ucycsIGZ1bmN0aW9uIChCbHVlcHJpbnQgJHRhYmxlKSB7CiAgICAgICAgICAgICR0YWJsZS0+aWQoKTsKICAgICAgICAgICAgJHRhYmxlLT5zdHJpbmcoJ25hbWVfYXInKTsKICAgICAgICAgICAgJHRhYmxlLT5zdHJpbmcoJ25hbWVfZW4nKTsKICAgICAgICAgICAgJHRhYmxlLT5zdHJpbmcoJ2NvZGUnKTsKICAgICAgICAgICAgJHRhYmxlLT5pbnRlZ2VyKCdjYXBpdGFsX2NpdHlfaWQnKTsKICAgICAgICAgICAgJHRhYmxlLT5iaWdJbnRlZ2VyKCdwb3B1bGF0aW9uJyk7CiAgICAgICAgfSk7CiAgICB9CgogICAgLyoqCiAgICAgKiBSZXZlcnNlIHRoZSBtaWdyYXRpb25zLgogICAgICoKICAgICAqIEByZXR1cm4gdm9pZAogICAgICovCiAgICBwdWJsaWMgZnVuY3Rpb24gZG93bigpCiAgICB7CiAgICAgICAgU2NoZW1hOjpkcm9wSWZFeGlzdHMoJ3JlZ2lvbnMnKTsKICAgIH0KfQo=
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateRegionsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('regions', function (Blueprint $table) {
+            $table->id();
+            $table->string('name_ar');
+            $table->string('name_en');
+            $table->string('code');
+            $table->integer('capital_city_id');
+            $table->bigInteger('population');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('regions');
+    }
+}
